@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Include Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Include Bootstrap JS (make sure it's included after jQuery and Popper.js) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <title>Typing Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+    <link rel="stylesheet" href="typingGame.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/plugins/line-numbers/prism-line-numbers.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism-tomorrow.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/plugins/line-numbers/prism-line-numbers.css"
+        rel="stylesheet" />
+
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a href="">
+            <img src="https://see.fontimg.com/api/renderfont4/K7BaA/eyJyIjoiZnMiLCJoIjo5MywidyI6MTI1MCwiZnMiOjc0LCJmZ2MiOiIjRkZGRkZGIiwiYmdjIjoiI0ZGRkZGRiIsInQiOjF9/REQ/doggy-dog-world.png"
+                alt="Doggy Dog World Logo" class="dd-icon" />
+        </a>
+        <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
+            aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse " id="navbarTogglerDemo01">
+            <ul class="navbar-nav ml-auto pl-3 ">
+                <li class="nav-item">
+                    <a class="nav-link active text-colors-navbar" aria-current="page" href="">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-colors-navbar" href="">Phone</a>
+                    <!-- Link to phone.html -->
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active text-colors-navbar" aria-current="page" href="">Blogging</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-colors-navbar" href="">News</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active text-colors-navbar" aria-current="page" href="">Shopping</a>
+                </li>
+                <!-- ------------------Drop Down - hide----------------------------------------- -->
+                <li class="nav-item dropdown d-none">
+                    <a class="nav-link dropdown-toggle text-colors-navbar" href="#" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        More
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </li>
+
+            </ul>
+            <!------------------------------- This is to create toggle Slider to switch on and off --------------------- -->
+
+            <!-- ---------------------------------------------------------------- Toggle Container------------------------------------------------------------->
+            <div class="d-none">
+                <div class="toggle-container">
+                    <label class="toggle-label"></label>
+                    <div class="toggle-switch" id="darkModeToggle">
+                        <div class="toggle-slider"></div>
+                    </div>
+                </div>
+                <script>
+                    const toggleSwitch = document.getElementById('darkModeToggle');
+                    const body = document.body;
+
+                    toggleSwitch.addEventListener('click', () => {
+                        toggleSwitch.classList.toggle('active');
+                        body.classList.toggle('dark-mode', darkModeToggle.checked);
+                    });
+                </script>
+            </div>
+            <!-- ----------------------------------------------------------------------------------------------------------- -->
+            <div class="search-subs">
+                <input class="form-control search-navbar mr-sm-4" type="search" placeholder="Search"
+                    aria-label="Search">
+                <a href=""><i class="fa fa-search search-icon" aria-hidden="true"></i></a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="main-container">
+        <h1 id="headingElement">This is heading element and you are the one who are going </h1>
+        
+        <input class="inputElement" placeholder="Write here" id="inputElement" type="text"> <!-- Changed the id to 'inputElement' -->
+        <div>
+            <h1 id="timer">0</h1>
+            <button id="startTimer">Start</button>
+            <button id="abortButton">Abort</button>
+            <p id="congrate"></p>
+        </div>
+    </div>
+
+</body>
+<script>
+    // Your JavaScript code
+    let headingElement = document.getElementById("headingElement");
+let inputElement = document.getElementById("inputElement"); // Corrected variable name
+let timer = document.getElementById("timer");
+let startTimer = document.getElementById("startTimer");
+let congrate = document.getElementById("congrate");
+let processedCharacters = [];
+let words = headingElement.textContent.split(" ");
+let wordsLength = parseInt(words.length);
+
+let fileExecuted = false;
+
+function function_executed() {
+  fileExecuted = true;
+  speedCalculation();
+}
+
+abortButton.addEventListener("click", function(){
+    alert("Are You Sure")
+})
+
+
+startTimer.addEventListener("click", function () {
+  timer.textContent = "";
+  inputElement.value = "";
+  headingElement.innerHTML = "This is heading element and you are the one who are going";
+  congrate.textContent = " ";
+  fileExecuted = false;
+  // Call your function here if needed
+});
+
+inputElement.addEventListener("keydown", function (event) {
+  var typedText = inputElement.value;
+  var originalText = headingElement.textContent;
+
+  if (!fileExecuted) {
+    function_executed();
+  } else {
+    var updatedText = "";
+    for (var i = 0; i < originalText.length; i++) {
+      if (i < typedText.length &&originalText[i].toLowerCase() === typedText[i].toLowerCase()) {
+        updatedText += '<span class="highlight">' + originalText[i] + "</span>";
+      } else {
+        updatedText += originalText[i];
+      }
+    }
+
+    headingElement.innerHTML = updatedText;
+  }
+});
+
+function speedCalculation() {
+  let countdown = 60;
+  let interval = setInterval(function () {
+    countdown = countdown - 1;
+    timer.textContent = countdown;
+
+    if (countdown === 0) {
+      clearInterval(interval);
+    } else {
+      // Compare the typed text with the original text
+      let typedText = inputElement.value;
+      let originalText = headingElement.textContent;
+
+      if (typedText === originalText) {
+        clearInterval(interval);
+        let timeLeft = 60 - parseInt(timer.textContent);
+        let timing = parseInt(60 / timeLeft);
+        let speed = wordsLength * timing;
+        congrate.textContent = speed;
+      }
+    }
+  }, 1000);
+}
+
+</script>
+
+</body>
+
+</html>
