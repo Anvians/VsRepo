@@ -1,0 +1,86 @@
+/* NAVBAR */
+body{
+    margin: 0px;
+}
+
+.navbar {
+    background-color: #0f172a;
+    margin: 0px;
+    flex-grow: 1;
+    flex-wrap: wrap;
+   
+    /* Adjust this value if needed */
+}
+.dd-icon {
+    height: 5vh;
+    margin-left: 10px;
+}
+
+.search-navbar {
+    width: 50% !important;
+    margin-left: 25px;
+    background-color: rgb(165, 195, 230);
+}
+.search-subs{
+    display: flex;
+}
+
+.navbar-class {
+    background-color: rgb(53, 73, 73) !important;
+   
+    position: fixed;
+    top: 0;
+    width: 100%;
+
+
+}
+.text-colors-navbar {
+    color: #ffffff !important;
+    margin-left: 15px;
+}
+.search-icon{
+    color: #ffffff;
+    margin-top: 15px;
+    margin-left: -10px;
+}
+
+/* main container */
+
+
+.main-container{
+    background-color: #414141;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.space-container{
+    
+    background-color: #ffffff;
+}
+.space-content{
+    font-size: 20px;
+    color: green;
+}
+p {
+    font-size: 18px;
+    color: black;
+    display: inline-block;
+}
+
+.highlight {
+    color: rgb(182, 98, 98);
+}
+#inputElement{
+    background-color: rgb(53, 155, 193);
+    font-size: 30px;
+   
+    
+    color: rgb(10, 10, 11);
+    border: 0px;
+}
+#headingElement{
+    color: #191919;
+    font-family: 'Times New Roman', Times, serif;
+}
